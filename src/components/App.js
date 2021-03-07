@@ -16,7 +16,7 @@ function App() {
         <NavMenu />
         <Cart />
         <Switch>
-          <Route path="/product/:handle">
+          <Route path="/products/:handle">
             <ProductPage />
           </Route>
           <Route path="/">
