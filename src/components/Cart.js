@@ -34,7 +34,7 @@ const Cart = () => {
             <DrawerCloseButton />
             <DrawerHeader>Your Shopping Cart</DrawerHeader>
             <DrawerBody>
-              {checkout.lineItems?.length ?
+              {checkout?.lineItems?.length ?
                 <SimpleGrid columns={1} spacing={10}>
                   {checkout.lineItems && checkout.lineItems.map(item => (
                     <Grid templateColumns="repeat(4, 1fr)" gap={1} key={item.id}>
@@ -67,7 +67,7 @@ const Cart = () => {
             </DrawerBody>
             <DrawerFooter>
               <Button w="100%">
-                <Link w="100%" href={checkout.webUrl}>
+                <Link w="100%" href={checkout?.webUrl}>
                   Checkout
                 </Link>
               </Button>
