@@ -47,7 +47,7 @@ const ProductPage = () => {
       <Center fontWeight="bold" pb="2rem">You Might also like</Center>
       <Grid templateColumns={['repeat(1fr)', 'repeat(3, 1fr)']} id="products">
         {products.map(product => (
-          <Link to={`//${product.handle}`} key={product.id} >
+          <Link to={`/products/${product.handle}`} key={product.id} >
             <Box _hover={{ opacity: '80%' }} textAlign="center" position="relative">
               <Image
                 src={product.images[0].src}
